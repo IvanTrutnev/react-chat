@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import { withStyles } from 'material-ui';
 import Typography from 'material-ui/Typography';
-import Avatar from 'material-ui/Avatar';
+import Avatar from './Avatar';
 import Paper from 'material-ui/Paper';
 
 import titleInitials from '../utils/title-initials';
@@ -33,7 +33,7 @@ const ChatMessage = ({ classes, sender, content }) => {
   const isMessageFromMe = sender === 'me';
 
   const userAvatar = (
-    <Avatar>
+    <Avatar colorFrom={sender}>
       {titleInitials(sender)}
     </Avatar>
   );
