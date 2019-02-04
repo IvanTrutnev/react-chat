@@ -3,8 +3,6 @@ import { withStyles } from 'material-ui/styles';
 import { ListItem, ListItemText } from 'material-ui/List';
 import Avatar from './Avatar';
 
-import titleInitials from '../utils/title-initials';
-
 const styles = theme => ({
   // ...
 });
